@@ -27,7 +27,13 @@ i,em,s,u{font-style:normal} u{text-decoration:none}
 .title p{font-size:4.8cqw;font-weight:900;line-height:1.25}.title p span{display:block;font-size:3.9cqw}
 .rbc{position:absolute;left:4.1cqw;top:40cqw;background:var(--white);color:var(--teal);font-size:4.5cqw;font-weight:900;padding:1.1cqw 2.6cqw;white-space:nowrap}
 .diver{position:absolute;left:20.63cqw;top:45.3cqw;width:57.55cqw}
-.actions{display:grid;gap:10px;padding-block:4px 22px}
+.from{display:grid;gap:10px;padding-block:2px 6px;text-align:center}
+.from h2{font-size:30px;font-weight:900;line-height:1.3;color:var(--yellow)}.from h2 span{display:block;font-size:12px;color:var(--mist);font-weight:700}
+.starts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.starts a{min-width:0;display:block;text-decoration:none;color:var(--white);background:var(--panel);border:2px solid #ffffff55;border-radius:14px;padding:9px 2px 8px}
+.starts a.hot{border-color:var(--yellow)}.starts b{display:block;font-size:17px;font-weight:900;line-height:1.3}.starts b i{display:block;font-size:10px;color:var(--mist);font-weight:700}
+.starts strong{display:block;font-family:var(--display);font-size:clamp(20px,6.6vw,40px);line-height:1.4;white-space:nowrap}.starts strong small{font-size:.45em;margin-inline:1px}.starts s{display:block;font-size:12px;color:var(--dim);text-decoration:line-through}
+.four{font-size:13px;font-weight:800}.until{background:var(--red);border-radius:10px;padding:7px 10px;font-weight:900;font-size:15px}
+section[id]{scroll-margin-top:8px}.jump{margin-top:16px}
 .cta{display:block;text-align:center;text-decoration:none;color:var(--white);background:var(--wa);border-radius:14px;padding:13px 16px;border:2px solid #4FD08A}
 .cta b{display:block;font-size:18px;font-weight:900;line-height:1.35}.cta span{display:block;font-size:12px;font-weight:700;opacity:.95}
 .cta.line{background:transparent;border-color:var(--white)}
@@ -96,6 +102,7 @@ td em{display:inline-block;background:var(--red);border-radius:5px;font-size:11p
 .tc{font-size:11px;color:var(--dim)}
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#0A1426f2;border-top:1px solid #ffffff30;padding-top:10px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px))}
 .bar .cta{max-width:608px;margin:0 auto;padding:9px 16px}
+@media (max-width:340px){td strong{font-size:15px}td em{font-size:9.5px;padding:0 3px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -108,22 +115,18 @@ td em{display:inline-block;background:var(--red);border-radius:5px;font-size:11p
  <div class="rbc">ROOM + BREAKFAST + COURSE</div>
  <img class="diver" src="img/a_diver.png" alt="">
 </header>
-<div class="pad actions">
+<div class="pad from">
+ <h2>早鸟价 <span>Early-bird from · 每人 RM · 含住宿、早餐及课程</span></h2>
+ <div class="starts">
+  <a href="#prices"><b>OW<i>开放水域 4天3夜</i></b><strong><small>RM</small>1,599<small>起</small></strong><s>RM1,780</s></a>
+  <a href="#prices"><b>AOW<i>进阶 3天2夜</i></b><strong><small>RM</small>1,499<small>起</small></strong><s>RM1,670</s></a>
+  <a href="#prices" class="hot"><b>套餐<i>OW+AOW 5天4夜</i></b><strong><small>RM</small>2,969<small>起</small></strong><s>RM3,299</s></a>
+ </div>
+ <p class="four">套餐 4 人同行每人 RM2,870 起 · Group of 4 from RM2,870</p>
+ <p class="until">早鸟截止 2026 年 12 月 31 日</p>
  <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%202027%20%E5%88%81%E6%9B%BC%E5%B2%9B%E6%97%A9%E9%B8%9F%E6%BD%9C%E6%B0%B4%E8%AF%BE%E7%A8%8B%E3%80%82" target="_blank" rel="noopener"><b>WhatsApp 预订早鸟价</b><span>Book on WhatsApp</span></a>
- <a class="cta line" href="#prices"><b>看价格</b><span>See prices</span></a>
+ <a class="cta line" href="#prices"><b>看全部价格</b><span>See all prices</span></a>
 </div>
-<div class="band pad"><h2>价格透明</h2><h3>包什么 · 不包什么，一目了然</h3><div class="en">CLEAR PRICES. NO GUESSWORK.</div>
- <p>配套包含的项目、需要自付的费用，下面逐项列明。<br>See what the package covers and what you pay separately.</p></div>
-<section class="pad lists">
- <div class="list"><h3>包含<span>INCLUDED</span></h3><ul class="yes"><li><b>住宿</b><i>Accommodation</i><u>OW 3晚 · AOW 2晚 · 套餐 4晚</u></li><li><b>每日早餐</b><i>Daily breakfast</i></li><li><b>PADI 线上学习 + 课程</b><i>PADI e-learning &amp; course</i></li><li><b>教练指导费</b><i>Instructor fee</i></li><li><b>全套潜水装备</b><i>Full dive equipment</i></li><li><b>潜水训练</b><i>Training dives</i><u>OW 岸潜 3 + 船潜 2<br>AOW 岸潜 3 + 船潜 2<br>套餐 岸潜 5 + 船潜 4</u></li></ul></div>
- <div class="list no"><h3>不包含<span>NOT INCLUDED</span></h3><ul class="no"><li><b>来回渡轮</b><i>Return ferry</i></li><li><b>前往码头的交通</b><i>Transport to the jetty</i></li><li><b>海洋公园费</b><i>Marine park fee</i></li><li><b>度假村房费附加费</b><i>Resort room surcharge</i><u>周末 / 公假 / 旺季<br>宿舍房除外 · 由度假村收取</u></li><li><b>午餐、晚餐</b><i>Lunch &amp; dinner</i></li><li><b>旅游保险</b><i>Travel insurance</i></li><li><b>个人消费</b><i>Personal expenses</i></li></ul></div>
-</section>
-<section class="pad"><h2 class="sec">房型与附加费<span>Rooms &amp; resort surcharge</span></h2><figure class="rm top"><img alt="" loading="lazy" src="img/a_room1.jpg"><figcaption><b>宿舍房</b><i>Dorm Room</i><em class="free">无附加费<small>No surcharge</small></em></figcaption></figure><figure class="rm top"><img alt="" loading="lazy" src="img/a_room2.jpg"><figcaption><b>标准 Chalet 房</b><i>Standard Chalet Room</i><em class="pay">有附加费<small>Surcharge applies</small></em></figcaption></figure><div class="cont"><div class="chead2"><h5>标准货柜房<span>Standard Container Room</span></h5><em class="pay">有附加费<small>Surcharge applies</small></em></div><div class="three"><figure class="rm "><img alt="" loading="lazy" src="img/a_room3.jpg"><figcaption><b>单人房 / 双人房</b><i>Single / twin sharing<br>1 张双人床 · 1 double bed</i></figcaption></figure><figure class="rm "><img alt="" loading="lazy" src="img/a_room4.jpg"><figcaption><b>3 人房</b><i>Triple sharing<br>3 张单人床 · 3 single beds</i></figcaption></figure><figure class="rm "><img alt="" loading="lazy" src="img/a_room5.jpg"><figcaption><b>4 人房</b><i>Quad sharing<br>4 张单人床 · 4 single beds</i></figcaption></figure></div></div><div class="fee"><h4>度假村房费附加费 <span>Resort room surcharge</span></h4>
-<p class="who">只限 Chalet 房与货柜房（宿舍房除外）· Chalet and Container rooms only</p>
-<div class="tiles"><div><strong>RM30</strong><b>周末</b><i>Weekend<br>每间房 · 每晚 per room per night</i></div><div><strong>RM60</strong><b>公共假期及前夕</b><i>Public holiday &amp; eve<br>每间房 · 每晚 per room per night</i></div></div>
-<p class="eg">例：周末住 2 晚 = 每间房 RM60，两人同房分摊即每人 RM30</p>
-<p class="by">此费用由度假村收取，不是 Ocean Master 的收费<br>Charged by the resort, not by Ocean Master</p></div>
-<p class="taxes">房价受度假村旺季附加费约束 · Subject to resort room peak season surcharge<br>非马来西亚公民需缴旅游税 · Non-Malaysians are subject to tourism tax</p></section>
 <section class="pad" id="prices"><h2 class="sec">2027 早鸟价<span>每人价格 RM · 含住宿、早餐及课程</span></h2>
  <div class="price"><h3>开放水域 OW<span>Open Water · 4天3夜</span></h3><table aria-label="Open Water prices"><tr><td></td><th scope="col">宿舍<br>4人房<i>Dorm / Quad</i></th><th scope="col">3人房<i>Triple</i></th><th scope="col">双人房<i>Twin</i></th><th scope="col">单人房<i>Single</i></th></tr><tr class="ow"><th scope="row">OW<i>4天3夜</i></th><td><s>RM1,780</s><strong><small>RM</small>1,599</strong><em>省181</em></td><td><s>RM1,810</s><strong><small>RM</small>1,629</strong><em>省181</em></td><td><s>RM1,950</s><strong><small>RM</small>1,755</strong><em>省195</em></td><td><s>RM2,400</s><strong><small>RM</small>2,160</strong><em>省240</em></td></tr></table>
   <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E8%AE%A2%202027%20%E6%97%A9%E9%B8%9F%20OW%20%E5%BC%80%E6%94%BE%E6%B0%B4%E5%9F%9F%E8%AF%BE%E7%A8%8B%EF%BC%884%E5%A4%A93%E5%A4%9C%EF%BC%89%E3%80%82" target="_blank" rel="noopener"><b>预订 OW 课程</b><span>Book Open Water on WhatsApp</span></a></div>
@@ -133,18 +136,31 @@ td em{display:inline-block;background:var(--red);border-radius:5px;font-size:11p
   <table aria-label="Combo prices"><tr><td></td><th scope="col">宿舍<br>4人房<i>Dorm / Quad</i></th><th scope="col">3人房<i>Triple</i></th><th scope="col">双人房<i>Twin</i></th><th scope="col">单人房<i>Single</i></th></tr><tr class="cb"><th scope="row">1–2人<i>1–2 pax</i></th><td><s>RM3,299</s><strong><small>RM</small>2,969</strong><em>省330</em></td><td><s>RM3,379</s><strong><small>RM</small>3,050</strong><em>省329</em></td><td><s>RM3,559</s><strong><small>RM</small>3,200</strong><em>省359</em></td><td><s>RM4,159</s><strong><small>RM</small>3,749</strong><em>省410</em></td></tr><tr class="g3"><th scope="row">3人<br>同行<i>Group of 3</i></th><td><strong><small>RM</small>2,903</strong><em>省396</em></td><td><strong><small>RM</small>2,974</strong><em>省405</em></td><td><strong><small>RM</small>3,132</strong><em>省427</em></td><td><strong><small>RM</small>3,660</strong><em>省499</em></td></tr><tr class="g4"><th scope="row">4人<br>同行<i>Group of 4</i></th><td><strong><small>RM</small>2,870</strong><em>省429</em></td><td><strong><small>RM</small>2,940</strong><em>省439</em></td><td><strong><small>RM</small>3,096</strong><em>省463</em></td><td><strong><small>RM</small>3,618</strong><em>省541</em></td></tr></table>
   <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E8%AE%A2%202027%20%E6%97%A9%E9%B8%9F%20OW%20%2B%20AOW%20%E5%A5%97%E9%A4%90%EF%BC%885%E5%A4%A94%E5%A4%9C%EF%BC%89%EF%BC%8C%E6%88%91%E4%BB%AC%E6%9C%89%20__%20%E4%BA%BA%E3%80%82" target="_blank" rel="noopener"><b>预订 OW + AOW 套餐</b><span>Book the combo on WhatsApp</span></a></div>
  <p class="note">划线 = 原价 Regular price · 省 = Save (RM)<br>团体价只限套餐，需同一开课日期<br>宿舍 = 多人共享房 · 4人房 / 3人房 / 双人房 = 按人数共享 · 单人房 = 独享<br>宿舍房以外的房型另有度假村附加费</p>
+ <a class="cta line jump" href="#rooms"><b>看房型照片与附加费</b><span>See rooms and surcharge</span></a>
 </section>
 <section class="pad"><h2 class="sec">早鸟赠礼<span>Free early-bird bonuses</span></h2>
  <ul class="bon"><li><b>水下照片 + 视频</b><i>Photo &amp; video set · 所有早鸟学员</i></li><li><b>潜水优惠券</b><i>Dive discount voucher · 所有早鸟学员</i></li><li><b>Ocean Master T 恤</b><i>Free T-shirt · 套餐</i></li><li><b>免费改期一次</b><i>需提前 30 天通知 · 30 days' notice</i></li></ul>
  <p class="note">3 / 4 人同行同样享有早鸟赠礼 Groups of 3 and 4 get the same bonuses</p></section>
 <div class="pad"><div class="dead"><b>2026 年 12 月 31 日截止</b><p>订金 RM300 / 人锁定早鸟价 · Deposit locks your price</p><p>WhatsApp 选日期 → 付订金 → 在家线上学习 → 来刁曼岛潜水</p>
- <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BB%98%E8%AE%A2%E9%87%91%E9%94%81%E5%AE%9A%202027%20%E6%97%A9%E9%B8%9F%E4%BB%B7%E3%80%82" target="_blank" rel="noopener"><b>现在锁定早鸟价</b><span>Lock my early-bird price</span></a></div>
- <p class="terms">适用 2027 年 3 月中旬至 11 月初开课 · 订金可转让他人，余款抵达前付清 · 每班最多 4 人 · 视天气与海况而定<br>Courses mid-Mar to early Nov 2027. Deposit transferable, balance before arrival. Max 4 per class. Weather permitting.</p></div>
+ <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BB%98%E8%AE%A2%E9%87%91%E9%94%81%E5%AE%9A%202027%20%E6%97%A9%E9%B8%9F%E4%BB%B7%E3%80%82" target="_blank" rel="noopener"><b>现在锁定早鸟价</b><span>Lock my early-bird price</span></a></div></div>
+<div class="band pad"><h2>价格透明</h2><h3>包什么 · 不包什么，一目了然</h3><div class="en">CLEAR PRICES. NO GUESSWORK.</div>
+ <p>配套包含的项目、需要自付的费用，下面逐项列明。<br>See what the package covers and what you pay separately.</p></div>
+<section class="pad lists">
+ <div class="list"><h3>包含<span>INCLUDED</span></h3><ul class="yes"><li><b>住宿</b><i>Accommodation</i><u>OW 3晚 · AOW 2晚 · 套餐 4晚</u></li><li><b>每日早餐</b><i>Daily breakfast</i></li><li><b>PADI 线上学习 + 课程</b><i>PADI e-learning &amp; course</i></li><li><b>教练指导费</b><i>Instructor fee</i></li><li><b>全套潜水装备</b><i>Full dive equipment</i></li><li><b>潜水训练</b><i>Training dives</i><u>OW 岸潜 3 + 船潜 2<br>AOW 岸潜 3 + 船潜 2<br>套餐 岸潜 5 + 船潜 4</u></li></ul></div>
+ <div class="list no"><h3>不包含<span>NOT INCLUDED</span></h3><ul class="no"><li><b>来回渡轮</b><i>Return ferry</i></li><li><b>前往码头的交通</b><i>Transport to the jetty</i></li><li><b>海洋公园费</b><i>Marine park fee</i></li><li><b>度假村房费附加费</b><i>Resort room surcharge</i><u>周末 / 公假 / 旺季<br>宿舍房除外 · 由度假村收取</u></li><li><b>午餐、晚餐</b><i>Lunch &amp; dinner</i></li><li><b>旅游保险</b><i>Travel insurance</i></li><li><b>个人消费</b><i>Personal expenses</i></li></ul></div>
+</section>
+<section class="pad" id="rooms"><h2 class="sec">房型与附加费<span>Rooms &amp; resort surcharge</span></h2><figure class="rm top"><img alt="" loading="lazy" src="img/a_room1.jpg"><figcaption><b>宿舍房</b><i>Dorm Room</i><em class="free">无附加费<small>No surcharge</small></em></figcaption></figure><figure class="rm top"><img alt="" loading="lazy" src="img/a_room2.jpg"><figcaption><b>标准 Chalet 房</b><i>Standard Chalet Room</i><em class="pay">有附加费<small>Surcharge applies</small></em></figcaption></figure><div class="cont"><div class="chead2"><h5>标准货柜房<span>Standard Container Room</span></h5><em class="pay">有附加费<small>Surcharge applies</small></em></div><div class="three"><figure class="rm "><img alt="" loading="lazy" src="img/a_room3.jpg"><figcaption><b>单人房 / 双人房</b><i>Single / twin sharing<br>1 张双人床 · 1 double bed</i></figcaption></figure><figure class="rm "><img alt="" loading="lazy" src="img/a_room4.jpg"><figcaption><b>3 人房</b><i>Triple sharing<br>3 张单人床 · 3 single beds</i></figcaption></figure><figure class="rm "><img alt="" loading="lazy" src="img/a_room5.jpg"><figcaption><b>4 人房</b><i>Quad sharing<br>4 张单人床 · 4 single beds</i></figcaption></figure></div></div><div class="fee"><h4>度假村房费附加费 <span>Resort room surcharge</span></h4>
+<p class="who">只限 Chalet 房与货柜房（宿舍房除外）· Chalet and Container rooms only</p>
+<div class="tiles"><div><strong>RM30</strong><b>周末</b><i>Weekend<br>每间房 · 每晚 per room per night</i></div><div><strong>RM60</strong><b>公共假期及前夕</b><i>Public holiday &amp; eve<br>每间房 · 每晚 per room per night</i></div></div>
+<p class="eg">例：周末住 2 晚 = 每间房 RM60，两人同房分摊即每人 RM30</p>
+<p class="by">此费用由度假村收取，不是 Ocean Master 的收费<br>Charged by the resort, not by Ocean Master</p></div>
+<p class="taxes">房价受度假村旺季附加费约束 · Subject to resort room peak season surcharge<br>非马来西亚公民需缴旅游税 · Non-Malaysians are subject to tourism tax</p><a class="cta line jump" href="#prices"><b>回到价格</b><span>Back to prices</span></a></section>
 <section class="pad"><h2 class="sec">Ben 教练资历<span>PADI credentials</span></h2>
  <div class="award"><img src="img/a_cert0.jpg" alt="PADI Elite Instructor Award, 1 April 2026" loading="lazy"><em>最新 LATEST</em><b>PADI Elite Instructor Award</b><i>200 张证书 · 200 certifications</i><u>2026 年 4 月 1 日颁发</u></div>
  <div class="certs"><figure><div><img alt="" loading="lazy" src="img/a_cert6.jpg"></div><figcaption><b>开放水域潜水教练</b><i>Open Water Scuba Instructor</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert1.jpg"></div><figcaption><b>高氧专长教练</b><i>Enriched Air Instructor</i><u>2025年7月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert3.jpg"></div><figcaption><b>中性浮力专长教练</b><i>Peak Performance Buoyancy</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert2.jpg"></div><figcaption><b>PADI AWARE 环保教练</b><i>PADI AWARE Instructor</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert4.jpg"></div><figcaption><b>珊瑚礁保育专长教练</b><i>Coral Reef Conservation</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert5.jpg"></div><figcaption><b>海底清洁专长教练</b><i>Dive Against Debris</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert7.jpg"></div><figcaption><b>EFR 急救教练</b><i>Emergency First Response</i><u>2025年2月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert8.jpg"></div><figcaption><b>潜水长</b><i>Divemaster</i><u>2024年9月</u></figcaption></figure></div></section>
 <section class="pad"><div class="meet"><div><h2 class="sec" style="text-align:left">你的教练 Ben</h2><div class="say">零基础也能轻松学潜水<br>与 Ben 教练一起探索海底世界<br>每班最多 4 人</div><img class="badge" src="img/a_badge.png" alt="PADI Elite Instructor, 200 certifications"></div>
  <img src="img/a_ben_new.png" alt="Ben, dive instructor, holding a tank"></div>
+<p class="terms">适用 2027 年 3 月中旬至 11 月初开课 · 订金可转让他人，余款抵达前付清 · 每班最多 4 人 · 视天气与海况而定<br>Courses mid-Mar to early Nov 2027. Deposit transferable, balance before arrival. Max 4 per class. Weather permitting.</p>
  <div class="contact"><a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%202027%20%E5%88%81%E6%9B%BC%E5%B2%9B%E6%97%A9%E9%B8%9F%E6%BD%9C%E6%B0%B4%E8%AF%BE%E7%A8%8B%E3%80%82" target="_blank" rel="noopener"><b>WhatsApp 问 Ben</b><span>Chat with Ben on WhatsApp</span></a>
   <div class="num"><span id="num">+6011 1082 1369</span><button type="button" id="copy">复制号码 Copy</button></div>
   <div class="soc"><img src="img/a_fb.png" alt="Facebook"><img src="img/a_ig.png" alt="Instagram"><img src="img/a_xhs.png" alt="小红书">Ocean Master Scuba</div>
