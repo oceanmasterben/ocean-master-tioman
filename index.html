@@ -1,10 +1,4 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Ocean Master Scuba 2027 刁曼岛潜水考证早鸟价：房型、价格与 WhatsApp 预订">
-<title>Ocean Master Tioman 2027</title>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Ocean Master Scuba 2027 刁曼岛潜水考证早鸟价：房型、价格与 WhatsApp 预订"><title>Ocean Master Tioman 2027</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Oswald:wght@600;700&family=Noto+Sans+SC:wght@500;700;900&display=swap">
 <style>img{max-width:100%}[hidden]{display:none!important}
 /* one column, phone first, in the brand's own dark-water look (single theme on purpose) */
@@ -37,6 +31,12 @@ section[id]{scroll-margin-top:8px}.jump{margin-top:16px}
 .cta{display:block;text-align:center;text-decoration:none;color:var(--white);background:var(--wa);border-radius:14px;padding:13px 16px;border:2px solid #4FD08A}
 .cta b{display:block;font-size:18px;font-weight:900;line-height:1.35}.cta span{display:block;font-size:12px;font-weight:700;opacity:.95}
 .cta.line{background:transparent;border-color:var(--white)}
+.cta{position:relative;padding-inline:44px;box-shadow:0 5px 0 #0B5E31;transition:transform .08s,box-shadow .08s;-webkit-tap-highlight-color:transparent}
+.cta.line{box-shadow:0 5px 0 #ffffff45}
+.cta .tap{position:absolute;right:10px;top:50%;margin-top:-14px;font-style:normal;font-size:26px;line-height:32px;pointer-events:none;animation:tap 1.6s ease-in-out infinite}
+.cta::after{content:"";position:absolute;right:13px;top:50%;margin-top:-25px;width:26px;height:26px;border:3px solid currentColor;border-radius:50%;opacity:0;pointer-events:none;animation:ring 1.6s ease-out infinite}
+@keyframes tap{0%,55%,100%{transform:translate(0,3px) scale(1)}25%{transform:translate(-3px,-3px) scale(.84)}}
+@keyframes ring{0%,22%{opacity:0;transform:scale(.3)}28%{opacity:.95}65%,100%{opacity:0;transform:scale(1.3)}}
 .cta:hover{filter:brightness(1.1)} a:focus-visible,button:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
 .band{background:var(--yellow);color:var(--navy);text-align:center;padding-block:22px}
 .band h2{font-size:clamp(46px,14vw,92px);font-weight:900;line-height:1.2;font-family:'Noto Sans SC',sans-serif}
@@ -101,12 +101,14 @@ td em{display:inline-block;background:var(--red);border-radius:5px;font-size:11p
 .soc{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;font-weight:800}.soc img{width:42px}
 .tc{font-size:11px;color:var(--dim)}
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#0A1426f2;border-top:1px solid #ffffff30;padding-top:10px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px))}
-.bar .cta{max-width:608px;margin:0 auto;padding:9px 16px}
+.bar .cta{max-width:608px;margin:0 auto;padding-block:9px}
 @media (max-width:340px){td strong{font-size:15px}td em{font-size:9.5px;padding:0 3px}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
-</head>
-<body>
+.num button{box-shadow:0 4px 0 #ffffff55;transition:transform .08s,box-shadow .08s}
+.cta:active{transform:translateY(4px);box-shadow:0 1px 0 #0B5E31;filter:brightness(.94)}
+.cta.line:active{box-shadow:0 1px 0 #ffffff45}.dead .cta{box-shadow:0 5px 0 #7A0A10}.dead .cta:active{box-shadow:0 1px 0 #7A0A10}
+.num button:active{transform:translateY(3px);box-shadow:0 1px 0 #ffffff55}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta .tap,.cta::after{animation:none}.cta,.num button{transition:none}}
+</style></head><body>
 <div class="col">
 <header class="hero">
  <img class="logo" src="img/a_logo.png" alt="Ocean Master">
@@ -124,12 +126,12 @@ td em{display:inline-block;background:var(--red);border-radius:5px;font-size:11p
 <section class="pad" id="prices"><h2 class="sec">2027 早鸟价<span>每人价格 RM · 含住宿、早餐及课程</span></h2>
  <p class="until">早鸟截止 2026 年 12 月 31 日</p>
  <div class="price"><h3>开放水域 OW<span>Open Water · 4天3夜</span></h3><table aria-label="Open Water prices"><tr><td></td><th scope="col">宿舍<br>4人房<i>Dorm / Quad</i></th><th scope="col">3人房<i>Triple</i></th><th scope="col">双人房<i>Twin</i></th><th scope="col">单人房<i>Single</i></th></tr><tr class="ow"><th scope="row">OW<i>4天3夜</i></th><td><s>RM1,780</s><strong><small>RM</small>1,599</strong><em>省181</em></td><td><s>RM1,810</s><strong><small>RM</small>1,629</strong><em>省181</em></td><td><s>RM1,950</s><strong><small>RM</small>1,755</strong><em>省195</em></td><td><s>RM2,400</s><strong><small>RM</small>2,160</strong><em>省240</em></td></tr></table>
-  <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E8%AE%A2%202027%20%E6%97%A9%E9%B8%9F%20OW%20%E5%BC%80%E6%94%BE%E6%B0%B4%E5%9F%9F%E8%AF%BE%E7%A8%8B%EF%BC%884%E5%A4%A93%E5%A4%9C%EF%BC%89%E3%80%82" target="_blank" rel="noopener"><b>预订 OW 课程</b><span>Book Open Water on WhatsApp</span></a></div>
+  <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E8%AE%A2%202027%20%E6%97%A9%E9%B8%9F%20OW%20%E5%BC%80%E6%94%BE%E6%B0%B4%E5%9F%9F%E8%AF%BE%E7%A8%8B%EF%BC%884%E5%A4%A93%E5%A4%9C%EF%BC%89%E3%80%82" target="_blank" rel="noopener"><b>预订 OW 课程</b><span>Book Open Water on WhatsApp</span><i class="tap" aria-hidden="true">👆</i></a></div>
  <div class="price"><h3>进阶开放水域 AOW<span>Advanced Open Water · 3天2夜</span></h3><table aria-label="Advanced Open Water prices"><tr><td></td><th scope="col">宿舍<br>4人房<i>Dorm / Quad</i></th><th scope="col">3人房<i>Triple</i></th><th scope="col">双人房<i>Twin</i></th><th scope="col">单人房<i>Single</i></th></tr><tr class="aow"><th scope="row">AOW<i>3天2夜</i></th><td><s>RM1,670</s><strong><small>RM</small>1,499</strong><em>省171</em></td><td><s>RM1,700</s><strong><small>RM</small>1,530</strong><em>省170</em></td><td><s>RM1,800</s><strong><small>RM</small>1,620</strong><em>省180</em></td><td><s>RM2,100</s><strong><small>RM</small>1,890</strong><em>省210</em></td></tr></table>
-  <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E8%AE%A2%202027%20%E6%97%A9%E9%B8%9F%20AOW%20%E8%BF%9B%E9%98%B6%E8%AF%BE%E7%A8%8B%EF%BC%883%E5%A4%A92%E5%A4%9C%EF%BC%89%E3%80%82" target="_blank" rel="noopener"><b>预订 AOW 课程</b><span>Book Advanced on WhatsApp</span></a></div>
+  <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E8%AE%A2%202027%20%E6%97%A9%E9%B8%9F%20AOW%20%E8%BF%9B%E9%98%B6%E8%AF%BE%E7%A8%8B%EF%BC%883%E5%A4%A92%E5%A4%9C%EF%BC%89%E3%80%82" target="_blank" rel="noopener"><b>预订 AOW 课程</b><span>Book Advanced on WhatsApp</span><i class="tap" aria-hidden="true">👆</i></a></div>
  <div class="price best"><span class="tag">最超值 BEST VALUE</span><h3>开放水域 + 进阶<span>OW + Advanced · 5天4夜</span></h3>
   <table aria-label="Combo prices"><tr><td></td><th scope="col">宿舍<br>4人房<i>Dorm / Quad</i></th><th scope="col">3人房<i>Triple</i></th><th scope="col">双人房<i>Twin</i></th><th scope="col">单人房<i>Single</i></th></tr><tr class="cb"><th scope="row">1–2人<i>1–2 pax</i></th><td><s>RM3,299</s><strong><small>RM</small>2,969</strong><em>省330</em></td><td><s>RM3,379</s><strong><small>RM</small>3,050</strong><em>省329</em></td><td><s>RM3,559</s><strong><small>RM</small>3,200</strong><em>省359</em></td><td><s>RM4,159</s><strong><small>RM</small>3,749</strong><em>省410</em></td></tr><tr class="g3"><th scope="row">3人<br>同行<i>Group of 3</i></th><td><strong><small>RM</small>2,903</strong><em>省396</em></td><td><strong><small>RM</small>2,974</strong><em>省405</em></td><td><strong><small>RM</small>3,132</strong><em>省427</em></td><td><strong><small>RM</small>3,660</strong><em>省499</em></td></tr><tr class="g4"><th scope="row">4人<br>同行<i>Group of 4</i></th><td><strong><small>RM</small>2,870</strong><em>省429</em></td><td><strong><small>RM</small>2,940</strong><em>省439</em></td><td><strong><small>RM</small>3,096</strong><em>省463</em></td><td><strong><small>RM</small>3,618</strong><em>省541</em></td></tr></table>
-  <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E8%AE%A2%202027%20%E6%97%A9%E9%B8%9F%20OW%20%2B%20AOW%20%E5%A5%97%E9%A4%90%EF%BC%885%E5%A4%A94%E5%A4%9C%EF%BC%89%EF%BC%8C%E6%88%91%E4%BB%AC%E6%9C%89%20__%20%E4%BA%BA%E3%80%82" target="_blank" rel="noopener"><b>预订 OW + AOW 套餐</b><span>Book the combo on WhatsApp</span></a></div>
+  <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E8%AE%A2%202027%20%E6%97%A9%E9%B8%9F%20OW%20%2B%20AOW%20%E5%A5%97%E9%A4%90%EF%BC%885%E5%A4%A94%E5%A4%9C%EF%BC%89%EF%BC%8C%E6%88%91%E4%BB%AC%E6%9C%89%20__%20%E4%BA%BA%E3%80%82" target="_blank" rel="noopener"><b>预订 OW + AOW 套餐</b><span>Book the combo on WhatsApp</span><i class="tap" aria-hidden="true">👆</i></a></div>
  <p class="note">划线 = 原价 Regular price · 省 = Save (RM)<br>团体价只限套餐，需同一开课日期<br>宿舍 = 多人共享房 · 4人房 / 3人房 / 双人房 = 按人数共享 · 单人房 = 独享<br>宿舍房以外的房型另有度假村附加费</p>
 </section>
 <section class="pad" id="rooms"><h2 class="sec">房型与附加费<span>Rooms &amp; resort surcharge</span></h2><figure class="rm top"><img alt="" loading="lazy" src="img/a_room1.jpg"><figcaption><b>宿舍房</b><i>Dorm Room</i><em class="free">无附加费<small>No surcharge</small></em></figcaption></figure><figure class="rm top"><img alt="" loading="lazy" src="img/a_room2.jpg"><figcaption><b>标准 Chalet 房</b><i>Standard Chalet Room</i><em class="pay">有附加费<small>Surcharge applies</small></em></figcaption></figure><div class="cont"><div class="chead2"><h5>标准货柜房<span>Standard Container Room</span></h5><em class="pay">有附加费<small>Surcharge applies</small></em></div><div class="three"><figure class="rm "><img alt="" loading="lazy" src="img/a_room3.jpg"><figcaption><b>单人房 / 双人房</b><i>Single / twin sharing<br>1 张双人床 · 1 double bed</i></figcaption></figure><figure class="rm "><img alt="" loading="lazy" src="img/a_room4.jpg"><figcaption><b>3 人房</b><i>Triple sharing<br>3 张单人床 · 3 single beds</i></figcaption></figure><figure class="rm "><img alt="" loading="lazy" src="img/a_room5.jpg"><figcaption><b>4 人房</b><i>Quad sharing<br>4 张单人床 · 4 single beds</i></figcaption></figure></div></div><div class="fee"><h4>度假村房费附加费 <span>Resort room surcharge</span></h4>
@@ -137,30 +139,29 @@ td em{display:inline-block;background:var(--red);border-radius:5px;font-size:11p
 <div class="tiles"><div><strong>RM30</strong><b>周末</b><i>Weekend<br>每间房 · 每晚 per room per night</i></div><div><strong>RM60</strong><b>公共假期及前夕</b><i>Public holiday &amp; eve<br>每间房 · 每晚 per room per night</i></div></div>
 <p class="eg">例：周末住 2 晚 = 每间房 RM60，两人同房分摊即每人 RM30</p>
 <p class="by">此费用由度假村收取，不是 Ocean Master 的收费<br>Charged by the resort, not by Ocean Master</p></div>
-<p class="taxes">房价受度假村旺季附加费约束 · Subject to resort room peak season surcharge<br>非马来西亚公民需缴旅游税 · Non-Malaysians are subject to tourism tax</p><a class="cta line jump" href="#prices"><b>回到价格</b><span>Back to prices</span></a></section>
+<p class="taxes">房价受度假村旺季附加费约束 · Subject to resort room peak season surcharge<br>非马来西亚公民需缴旅游税 · Non-Malaysians are subject to tourism tax</p><a class="cta line jump" href="#prices"><b>回到价格</b><span>Back to prices</span><i class="tap" aria-hidden="true">👆</i></a></section>
 <section class="pad"><h2 class="sec">早鸟赠礼<span>Free early-bird bonuses</span></h2>
  <ul class="bon"><li><b>水下照片 + 视频</b><i>Photo &amp; video set · 所有早鸟学员</i></li><li><b>潜水优惠券</b><i>Dive discount voucher · 所有早鸟学员</i></li><li><b>Ocean Master T 恤</b><i>Free T-shirt · 套餐</i></li><li><b>免费改期一次</b><i>需提前 30 天通知 · 30 days' notice</i></li></ul>
  <p class="note">3 / 4 人同行同样享有早鸟赠礼 Groups of 3 and 4 get the same bonuses</p></section>
 <div class="pad"><div class="dead"><b>2026 年 12 月 31 日截止</b><p>订金 RM300 / 人锁定早鸟价 · Deposit locks your price</p><p>WhatsApp 选日期 → 付订金 → 在家线上学习 → 来刁曼岛潜水</p>
- <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BB%98%E8%AE%A2%E9%87%91%E9%94%81%E5%AE%9A%202027%20%E6%97%A9%E9%B8%9F%E4%BB%B7%E3%80%82" target="_blank" rel="noopener"><b>现在锁定早鸟价</b><span>Lock my early-bird price</span></a></div></div>
+ <a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BB%98%E8%AE%A2%E9%87%91%E9%94%81%E5%AE%9A%202027%20%E6%97%A9%E9%B8%9F%E4%BB%B7%E3%80%82" target="_blank" rel="noopener"><b>现在锁定早鸟价</b><span>Lock my early-bird price</span><i class="tap" aria-hidden="true">👆</i></a></div></div>
 <section class="pad"><h2 class="sec">Ben 教练资历<span>PADI credentials</span></h2>
  <div class="award"><img src="img/a_cert0.jpg" alt="PADI Elite Instructor Award, 1 April 2026" loading="lazy"><em>最新 LATEST</em><b>PADI Elite Instructor Award</b><i>200 张证书 · 200 certifications</i><u>2026 年 4 月 1 日颁发</u></div>
  <div class="certs"><figure><div><img alt="" loading="lazy" src="img/a_cert6.jpg"></div><figcaption><b>开放水域潜水教练</b><i>Open Water Scuba Instructor</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert1.jpg"></div><figcaption><b>高氧专长教练</b><i>Enriched Air Instructor</i><u>2025年7月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert3.jpg"></div><figcaption><b>中性浮力专长教练</b><i>Peak Performance Buoyancy</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert2.jpg"></div><figcaption><b>PADI AWARE 环保教练</b><i>PADI AWARE Instructor</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert4.jpg"></div><figcaption><b>珊瑚礁保育专长教练</b><i>Coral Reef Conservation</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert5.jpg"></div><figcaption><b>海底清洁专长教练</b><i>Dive Against Debris</i><u>2025年3月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert7.jpg"></div><figcaption><b>EFR 急救教练</b><i>Emergency First Response</i><u>2025年2月</u></figcaption></figure><figure><div><img alt="" loading="lazy" src="img/a_cert8.jpg"></div><figcaption><b>潜水长</b><i>Divemaster</i><u>2024年9月</u></figcaption></figure></div></section>
 <section class="pad"><div class="meet"><div><h2 class="sec" style="text-align:left">你的教练 Ben</h2><div class="say">零基础也能轻松学潜水<br>与 Ben 教练一起探索海底世界<br>每班最多 4 人</div><img class="badge" src="img/a_badge.png" alt="PADI Elite Instructor, 200 certifications"></div>
  <img src="img/a_ben_new.png" alt="Ben, dive instructor, holding a tank"></div>
 <p class="terms">适用 2027 年 3 月中旬至 11 月初开课 · 订金可转让他人，余款抵达前付清 · 每班最多 4 人 · 视天气与海况而定<br>Courses mid-Mar to early Nov 2027. Deposit transferable, balance before arrival. Max 4 per class. Weather permitting.</p>
- <div class="contact"><a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%202027%20%E5%88%81%E6%9B%BC%E5%B2%9B%E6%97%A9%E9%B8%9F%E6%BD%9C%E6%B0%B4%E8%AF%BE%E7%A8%8B%E3%80%82" target="_blank" rel="noopener"><b>WhatsApp 问 Ben</b><span>Chat with Ben on WhatsApp</span></a>
-  <div class="num"><span id="num">+6011 1082 1369</span><button type="button" id="copy">复制号码 Copy</button></div>
+ <div class="contact"><a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%202027%20%E5%88%81%E6%9B%BC%E5%B2%9B%E6%97%A9%E9%B8%9F%E6%BD%9C%E6%B0%B4%E8%AF%BE%E7%A8%8B%E3%80%82" target="_blank" rel="noopener"><b>WhatsApp 问 Ben</b><span>Chat with Ben on WhatsApp</span><i class="tap" aria-hidden="true">👆</i></a>
+  <div class="num"><span id="num">+6011 1082 1369</span><button type="button" id="copy">👆 复制号码 Copy</button></div>
   <div class="soc"><img src="img/a_fb.png" alt="Facebook"><img src="img/a_ig.png" alt="Instagram"><img src="img/a_xhs.png" alt="小红书">Ocean Master Scuba</div>
   <p class="tc">T&amp;C applies*</p></div></section>
 </div>
-<div class="bar pad"><a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%202027%20%E5%88%81%E6%9B%BC%E5%B2%9B%E6%97%A9%E9%B8%9F%E6%BD%9C%E6%B0%B4%E8%AF%BE%E7%A8%8B%E3%80%82" target="_blank" rel="noopener"><b>WhatsApp 预订</b><span>早鸟截止 31/12/2026</span></a></div>
+<div class="bar pad"><a class="cta " href="https://wa.me/601110821369?text=%E4%BD%A0%E5%A5%BD%20Ben%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%202027%20%E5%88%81%E6%9B%BC%E5%B2%9B%E6%97%A9%E9%B8%9F%E6%BD%9C%E6%B0%B4%E8%AF%BE%E7%A8%8B%E3%80%82" target="_blank" rel="noopener"><b>WhatsApp 预订</b><span>早鸟截止 31/12/2026</span><i class="tap" aria-hidden="true">👆</i></a></div>
 <script>
+document.addEventListener('touchstart',function(){},{passive:true});
 document.getElementById('copy').addEventListener('click',function(){
  var b=this,n=document.getElementById('num');
  function pick(){var r=document.createRange();r.selectNodeContents(n);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='已选中，请复制'}
  try{navigator.clipboard.writeText('+601110821369').then(function(){b.textContent='已复制 Copied'},pick)}catch(e){pick()}
 });
-</script>
-</body>
-</html>
+</script></body></html>
